@@ -6,9 +6,9 @@ Feature: Creating projects
   Scenario: Creating a project
     Given I am on the homepage
     When I follow "New Project"
-    And show me the page
     When I fill in "Name" with "TextMate 2"
     And I press "Create"
     Then I should see "Project has been created."
     Then I should be on the project page for "TextMate 2"
     And I should see "Show - Projects - Ticketee"
+    And show me the page
