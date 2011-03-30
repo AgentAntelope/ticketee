@@ -10,3 +10,5 @@ Feature: Creating projects
     When I fill in "Name" with "TextMate 2"
     And I press "Create"
     Then I should see "Project has been created."
+    Then I should be on the project page for "TextMate 2"
+    And I should see "Show - Projects - Ticketee"
